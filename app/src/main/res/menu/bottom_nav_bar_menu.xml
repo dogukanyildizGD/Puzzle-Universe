@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_puzzle"
+        android:icon="@drawable/puzzleicon"
+        android:title="Puzzles" />
+    <item
+        android:id="@+id/action_category"
+        android:icon="@drawable/categoryicon"
+        android:title="Category" />
+    <item
+        android:id="@+id/action_collections"
+        android:icon="@drawable/collectionicon"
+        android:title="Collections" />
+    <item
+        android:id="@+id/action_shop"
+        android:icon="@drawable/shopicon"
+        android:title="Shop" />
+</menu>

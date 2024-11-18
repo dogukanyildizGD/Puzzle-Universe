@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@color/colorBackground">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewbg7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewbg7"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gameiconbg" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewbg7"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewbg7"
+        app:layout_constraintStart_toStartOf="@+id/imageViewbg7"
+        app:srcCompat="@drawable/counticon" />
+
+    <ImageView
+        android:id="@+id/imageViewLamb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewbg7"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewbg7"
+        app:layout_constraintStart_toStartOf="@+id/imageViewbg7"
+        app:layout_constraintTop_toTopOf="@+id/imageViewbg7"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/lambicon" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewbg7"
+        app:layout_constraintStart_toStartOf="@+id/imageViewbg7"
+        app:layout_constraintTop_toTopOf="@+id/imageViewbg"
+        app:srcCompat="@drawable/timeicon" />
+
+    <TextView
+        android:id="@+id/textViewMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView46"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewbg7"
+        app:layout_constraintStart_toStartOf="@+id/imageViewbg7" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewbg7"
+        app:layout_constraintStart_toStartOf="@+id/imageViewbg7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView43" />
+
+    <ImageView
+        android:id="@+id/imagePuzzlePause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewbg7"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewbg7"
+        app:layout_constraintStart_toStartOf="@+id/imageViewbg7"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLamb"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/pauseicon" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutEndScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

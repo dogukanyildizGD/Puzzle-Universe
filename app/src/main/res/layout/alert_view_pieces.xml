@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imageViewPuzzle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewPiece9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loadicon" />
+
+    <ImageView
+        android:id="@+id/imageViewPiece9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewPiece100"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPiece25"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPuzzle"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPuzzle"
+        app:srcCompat="@drawable/piece9" />
+
+    <ImageView
+        android:id="@+id/imageViewPiece25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewPiece225"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPuzzle"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPiece9"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPuzzle"
+        app:srcCompat="@drawable/piece25" />
+
+    <ImageView
+        android:id="@+id/imageViewPiece100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPiece225"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPuzzle"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPiece9"
+        app:srcCompat="@drawable/piece100" />
+
+    <ImageView
+        android:id="@+id/imageViewPiece225"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPuzzle"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPiece100"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPiece25"
+        app:srcCompat="@drawable/piece225" />
+</androidx.constraintlayout.widget.ConstraintLayout>
